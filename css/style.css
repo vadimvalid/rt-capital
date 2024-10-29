@@ -1,3 +1,81 @@
 html {
   scrollbar-gutter: stable;
 }
+
+.rt-header {
+  z-index: 100;
+}
+
+.rt-header_burger {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .rt-header_burger {
+    display: block;
+  }
+}
+
+.header__menu {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: clamp(10px, 2vw, 40px);
+  margin: 0;
+}
+
+.header__menu li {
+  position: relative;
+  margin: 0;
+}
+
+.header__menu li a {
+  font-family: Gotham Pro, Arial, Helvetica Neue, Helvetica, sans-serif;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.header__menu li svg {
+  width: 15px;
+}
+
+.header__menu li > ul {
+  position: absolute;
+  top: 100%;
+  left: -18px;
+  display: none;
+  width: 260px;
+  padding: 12px 18px 18px;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 5;
+}
+
+.header__menu li:hover > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.header__menu li > ul a {
+  font-size: 16px;
+}
+
+.header__menu li a:hover {
+  color: #a39061;
+}
+
+.header__menu li svg path {
+  transition: all 0.3s ease;
+}
+
+.header__menu li:hover svg path {
+  fill: #a39061;
+}
+
+@media screen and (max-width: 1024px) {
+  .header__menu {
+    display: none;
+  }
+}
