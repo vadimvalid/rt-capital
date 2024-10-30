@@ -1,13 +1,13 @@
-html {
-  scrollbar-gutter: stable;
-}
-
 .rt-header {
   z-index: 100;
 }
 
 .rt-header_burger {
   display: none;
+}
+
+.rt-search {
+  z-index: 110;
 }
 
 @media screen and (max-width: 1024px) {
