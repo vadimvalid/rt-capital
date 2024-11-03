@@ -79,3 +79,17 @@
     display: none;
   }
 }
+
+.rt-deals-navigation_item {
+  color: #191919;
+}
+.rt-deals-navigation_item:visited {
+  color: #191919;
+}
+.multiselect.open .multiselect__content-wrapper {
+  display: block !important;
+}
+
+.multiselect.open .multiselect__select {
+  transform: rotate(180deg);
+}

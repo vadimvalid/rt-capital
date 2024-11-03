@@ -49,6 +49,7 @@
     <meta property="og:type" content="article" />
     <link rel="stylesheet" href="./css/capital.css" />
     <link rel="stylesheet" href="./css/style.css" />
+
     <script src="./js/runtime.js"></script>
     <script src="./js/1.js"></script>
     <script src="./js/capital_app_head.js"></script>
@@ -485,7 +486,7 @@
               </div>
             </div>
             <div class="rt-deals-list_bottom">
-              <div class="rt-deals-list_row">
+              <div class="rt-deals-list_row" pageslug="">
                 <div class="rt-deals-list_col rt-deals-list_col-left">
                   <div class="rt-catalog-filter">
                     <div class="rt-catalog-filter_btn">Фильтр</div>
@@ -509,10 +510,10 @@
                               style="display: none"
                             ></div>
                             <!---->
-                            <span class="multiselect__single"
-                              >По стартовой цене - ↓</span
-                            >
                             <!---->
+                            <span class="multiselect__placeholder">
+                              Выберите
+                            </span>
                           </div>
                           <div
                             tabindex="-1"
@@ -1312,17 +1313,7 @@
                                   data-selected=""
                                   data-deselect=""
                                   class="multiselect__option"
-                                  ><span>Земельные участки</span></span
-                                >
-                                <!---->
-                              </li>
-                              <li class="multiselect__element">
-                                <span
-                                  data-select=""
-                                  data-selected=""
-                                  data-deselect=""
-                                  class="multiselect__option"
-                                  ><span>Гаражи и машиноместа</span></span
+                                  ><span>Производственные</span></span
                                 >
                                 <!---->
                               </li>
@@ -1352,6 +1343,36 @@
                                   data-selected=""
                                   data-deselect=""
                                   class="multiselect__option"
+                                  ><span>Жилые</span></span
+                                >
+                                <!---->
+                              </li>
+                              <li class="multiselect__element">
+                                <span
+                                  data-select=""
+                                  data-selected=""
+                                  data-deselect=""
+                                  class="multiselect__option"
+                                  ><span>Земельные участки</span></span
+                                >
+                                <!---->
+                              </li>
+                              <li class="multiselect__element">
+                                <span
+                                  data-select=""
+                                  data-selected=""
+                                  data-deselect=""
+                                  class="multiselect__option"
+                                  ><span>Нежилые</span></span
+                                >
+                                <!---->
+                              </li>
+                              <li class="multiselect__element">
+                                <span
+                                  data-select=""
+                                  data-selected=""
+                                  data-deselect=""
+                                  class="multiselect__option"
                                   ><span>Административные</span></span
                                 >
                                 <!---->
@@ -1362,7 +1383,7 @@
                                   data-selected=""
                                   data-deselect=""
                                   class="multiselect__option"
-                                  ><span>Торговые</span></span
+                                  ><span>Гаражи и машиноместа</span></span
                                 >
                                 <!---->
                               </li>
@@ -1382,27 +1403,7 @@
                                   data-selected=""
                                   data-deselect=""
                                   class="multiselect__option"
-                                  ><span>Производственные</span></span
-                                >
-                                <!---->
-                              </li>
-                              <li class="multiselect__element">
-                                <span
-                                  data-select=""
-                                  data-selected=""
-                                  data-deselect=""
-                                  class="multiselect__option"
-                                  ><span>Жилые</span></span
-                                >
-                                <!---->
-                              </li>
-                              <li class="multiselect__element">
-                                <span
-                                  data-select=""
-                                  data-selected=""
-                                  data-deselect=""
-                                  class="multiselect__option"
-                                  ><span>Нежилые</span></span
+                                  ><span>Торговые</span></span
                                 >
                                 <!---->
                               </li>
@@ -1549,10 +1550,10 @@
                               style="display: none"
                             ></div>
                             <!---->
-                            <span class="multiselect__single"
-                              >Прием заявок</span
-                            >
                             <!---->
+                            <span class="multiselect__placeholder">
+                              Выберите
+                            </span>
                           </div>
                           <div
                             tabindex="-1"
@@ -1580,7 +1581,7 @@
                                   data-selected=""
                                   data-deselect=""
                                   class="multiselect__option"
-                                  ><span>Ожидание торгов</span></span
+                                  ><span>Актив реализован</span></span
                                 >
                                 <!---->
                               </li>
@@ -1591,16 +1592,6 @@
                                   data-deselect=""
                                   class="multiselect__option"
                                   ><span>Торги не состоялись</span></span
-                                >
-                                <!---->
-                              </li>
-                              <li class="multiselect__element">
-                                <span
-                                  data-select=""
-                                  data-selected=""
-                                  data-deselect=""
-                                  class="multiselect__option"
-                                  ><span>Актив реализован</span></span
                                 >
                                 <!---->
                               </li>
@@ -1634,6 +1625,16 @@
                                   data-deselect=""
                                   class="multiselect__option"
                                   ><span>Отмена торгов</span></span
+                                >
+                                <!---->
+                              </li>
+                              <li class="multiselect__element">
+                                <span
+                                  data-select=""
+                                  data-selected=""
+                                  data-deselect=""
+                                  class="multiselect__option"
+                                  ><span>Подготовка к реализации</span></span
                                 >
                                 <!---->
                               </li>
@@ -3967,7 +3968,7 @@
                                     28
                                   </div>
                                   <div
-                                    class="qs-square Вт qs-num qs-current"
+                                    class="qs-square Вт qs-num"
                                     data-direction="0"
                                   >
                                     29
@@ -3979,7 +3980,7 @@
                                     30
                                   </div>
                                   <div
-                                    class="qs-square Чт qs-num"
+                                    class="qs-square Чт qs-num qs-current"
                                     data-direction="0"
                                   >
                                     31
@@ -4292,7 +4293,7 @@
                                     28
                                   </div>
                                   <div
-                                    class="qs-square Вт qs-num qs-current"
+                                    class="qs-square Вт qs-num"
                                     data-direction="0"
                                   >
                                     29
@@ -4304,7 +4305,7 @@
                                     30
                                   </div>
                                   <div
-                                    class="qs-square Чт qs-num"
+                                    class="qs-square Чт qs-num qs-current"
                                     data-direction="0"
                                   >
                                     31
@@ -4434,1353 +4435,10 @@
                 </div>
                 <div class="rt-deals-list_col rt-deals-list_col-right">
                   <div class="rt-deals">
+                    <div class="rt-deals_sort"></div>
                     <div class="rt-deals_list">
-                      <div
-                        data-bid="1890"
-                        itemscope="itemscope"
-                        itemtype="https://schema.org/Product"
-                        class="rt-calendar-cart"
-                      >
-                        <div class="rt-calendar-cart_inner">
-                          <div class="rt-calendar-cart_image">
-                            <img
-                              src="./images/deals-1.jpg"
-                              alt="deals"
-                              loading="lazy"
-                              itemprop="image"
-                            />
-                          </div>
-                          <div class="rt-calendar-cart_content">
-                            <div
-                              itemprop="offers"
-                              itemscope="itemscope"
-                              itemtype="https://schema.org/Offer"
-                              class="rt-calendar-cart_price"
-                            >
-                              <span itemprop="price" content="5 930 000 000"
-                                >5 930 000 000</span
-                              >
-                              <span itemprop="priceCurrency" content="RUB"
-                                >руб.</span
-                              >
-                            </div>
-                            <div class="rt-calendar-cart_title">
-                              <a href="./deals-inner.html"
-                                ><span itemprop="name"
-                                  >100% уставного капитала АО «НИИВТ им. С.А.
-                                  Векшинского»</span
-                                ></a
-                              >
-                            </div>
-                            <div class="rt-calendar-cart_params">
-                              <div class="rt-calendar-cart_paramsLeft">
-                                <div class="rt-calendar-cart_param">
-                                  <div class="rt-calendar-cart_paramName">
-                                    Тип актива:
-                                  </div>
-                                  <div class="rt-calendar-cart_paramValue">
-                                    Пакет акций
-                                  </div>
-                                </div>
-                                <div class="rt-calendar-cart_param">
-                                  <div class="rt-calendar-cart_paramName">
-                                    Регион:
-                                  </div>
-                                  <div class="rt-calendar-cart_paramValue">
-                                    Москва
-                                  </div>
-                                </div>
-                                <div class="rt-calendar-cart_param">
-                                  <div class="rt-calendar-cart_paramName">
-                                    Адрес:
-                                  </div>
-                                  <div class="rt-calendar-cart_paramValue">
-                                    проезд Нагорный, д. 7 стр. 1.
-                                  </div>
-                                </div>
-                                <!---->
-                                <!---->
-                                <div class="rt-calendar-cart_param">
-                                  <div class="rt-calendar-cart_paramName">
-                                    Собственник:
-                                  </div>
-                                  <div class="rt-calendar-cart_paramValue">
-                                    ООО "РТ-Капитал"
-                                  </div>
-                                </div>
-                                <!---->
-                                <!---->
-                                <!---->
-                                <div class="rt-calendar-cart_param">
-                                  <div class="rt-calendar-cart_paramName">
-                                    Площадка торгов:
-                                  </div>
-                                  <div class="rt-calendar-cart_paramValue">
-                                    <a
-                                      href="https://sale.etprf.ru/Notification/id/15646"
-                                      target="_blank"
-                                    >
-                                      ЭТП РФ
-                                    </a>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="rt-deals-cart_paramsRight">
-                                <div class="rt-deals-cart_param">
-                                  <div class="rt-deals-cart_paramName">
-                                    Начало приема заявок:
-                                  </div>
-                                  <div class="rt-deals-cart_paramValue">
-                                    29.05.2024
-                                  </div>
-                                </div>
-                                <div class="rt-deals-cart_param">
-                                  <div class="rt-deals-cart_paramName">
-                                    Окончание приема заявок:
-                                  </div>
-                                  <div class="rt-deals-cart_paramValue">
-                                    05.11.2024
-                                  </div>
-                                </div>
-                                <div class="rt-deals-cart_param">
-                                  <div class="rt-deals-cart_paramName">
-                                    Дата торгов:
-                                  </div>
-                                  <div class="rt-deals-cart_paramValue">
-                                    08.11.2024
-                                  </div>
-                                </div>
-                                <div class="rt-deals-cart_docs">
-                                  <div class="rt-deals-cart_docName">
-                                    Документация по торгам
-                                  </div>
-                                  <a href="./deals-inner.html"></a>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="rt-calendar-cart_status">
-                            Прием заявок
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        data-bid="1756"
-                        itemscope="itemscope"
-                        itemtype="https://schema.org/Product"
-                        class="rt-calendar-cart"
-                      >
-                        <div class="rt-calendar-cart_inner">
-                          <div class="rt-calendar-cart_image">
-                            <img
-                              src="./images/deals-2.jpg"
-                              alt="deals"
-                              loading="lazy"
-                              itemprop="image"
-                            />
-                          </div>
-                          <div class="rt-calendar-cart_content">
-                            <div
-                              itemprop="offers"
-                              itemscope="itemscope"
-                              itemtype="https://schema.org/Offer"
-                              class="rt-calendar-cart_price"
-                            >
-                              <span itemprop="price" content="729 000 000"
-                                >729 000 000</span
-                              >
-                              <span itemprop="priceCurrency" content="RUB"
-                                >руб.</span
-                              >
-                            </div>
-                            <div class="rt-calendar-cart_title">
-                              <a href="./deals-inner.html"
-                                ><span itemprop="name"
-                                  >25,5001% уставного капитала ОАО «БЛМЗ»</span
-                                ></a
-                              >
-                            </div>
-                            <div class="rt-calendar-cart_params">
-                              <div class="rt-calendar-cart_paramsLeft">
-                                <div class="rt-calendar-cart_param">
-                                  <div class="rt-calendar-cart_paramName">
-                                    Тип актива:
-                                  </div>
-                                  <div class="rt-calendar-cart_paramValue">
-                                    Пакет акций
-                                  </div>
-                                </div>
-                                <div class="rt-calendar-cart_param">
-                                  <div class="rt-calendar-cart_paramName">
-                                    Регион:
-                                  </div>
-                                  <div class="rt-calendar-cart_paramValue">
-                                    Московская область
-                                  </div>
-                                </div>
-                                <div class="rt-calendar-cart_param">
-                                  <div class="rt-calendar-cart_paramName">
-                                    Адрес:
-                                  </div>
-                                  <div class="rt-calendar-cart_paramValue">
-                                    г.Балашиха, ш.Энтузиастов (западная промзона
-                                    тер), д.4
-                                  </div>
-                                </div>
-                                <!---->
-                                <!---->
-                                <div class="rt-calendar-cart_param">
-                                  <div class="rt-calendar-cart_paramName">
-                                    Собственник:
-                                  </div>
-                                  <div class="rt-calendar-cart_paramValue">
-                                    ООО "РТ-Капитал"
-                                  </div>
-                                </div>
-                                <!---->
-                                <!---->
-                                <!---->
-                                <div class="rt-calendar-cart_param">
-                                  <div class="rt-calendar-cart_paramName">
-                                    Площадка торгов:
-                                  </div>
-                                  <div class="rt-calendar-cart_paramValue">
-                                    <a
-                                      href="https://sale.etprf.ru/Notification/id/15479 "
-                                      target="_blank"
-                                    >
-                                      ЭТПРФ
-                                    </a>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="rt-deals-cart_paramsRight">
-                                <div class="rt-deals-cart_param">
-                                  <div class="rt-deals-cart_paramName">
-                                    Начало приема заявок:
-                                  </div>
-                                  <div class="rt-deals-cart_paramValue">
-                                    31.05.2024
-                                  </div>
-                                </div>
-                                <div class="rt-deals-cart_param">
-                                  <div class="rt-deals-cart_paramName">
-                                    Окончание приема заявок:
-                                  </div>
-                                  <div class="rt-deals-cart_paramValue">
-                                    31.10.2024
-                                  </div>
-                                </div>
-                                <div class="rt-deals-cart_param">
-                                  <div class="rt-deals-cart_paramName">
-                                    Дата торгов:
-                                  </div>
-                                  <div class="rt-deals-cart_paramValue">
-                                    02.11.2024
-                                  </div>
-                                </div>
-                                <div class="rt-deals-cart_docs">
-                                  <div class="rt-deals-cart_docName">
-                                    Документация по торгам
-                                  </div>
-                                  <a href="./deals-inner.html"></a>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="rt-calendar-cart_status">
-                            Прием заявок
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        data-bid="1909"
-                        itemscope="itemscope"
-                        itemtype="https://schema.org/Product"
-                        class="rt-calendar-cart"
-                      >
-                        <div class="rt-calendar-cart_inner">
-                          <div class="rt-calendar-cart_image">
-                            <img
-                              src="./images/deals-1.jpg"
-                              alt="deals"
-                              loading="lazy"
-                              itemprop="image"
-                            />
-                          </div>
-                          <div class="rt-calendar-cart_content">
-                            <div
-                              itemprop="offers"
-                              itemscope="itemscope"
-                              itemtype="https://schema.org/Offer"
-                              class="rt-calendar-cart_price"
-                            >
-                              <span itemprop="price" content="538 107 000"
-                                >538 107 000</span
-                              >
-                              <span itemprop="priceCurrency" content="RUB"
-                                >руб.</span
-                              >
-                            </div>
-                            <div class="rt-calendar-cart_title">
-                              <a href="./deals-inner.html"
-                                ><span itemprop="name"
-                                  >Акции С.П. «ТОПАЗ» А.О.</span
-                                ></a
-                              >
-                            </div>
-                            <div class="rt-calendar-cart_params">
-                              <div class="rt-calendar-cart_paramsLeft">
-                                <div class="rt-calendar-cart_param">
-                                  <div class="rt-calendar-cart_paramName">
-                                    Тип актива:
-                                  </div>
-                                  <div class="rt-calendar-cart_paramValue">
-                                    Пакет акций
-                                  </div>
-                                </div>
-                                <div class="rt-calendar-cart_param">
-                                  <div class="rt-calendar-cart_paramName">
-                                    Регион:
-                                  </div>
-                                  <div class="rt-calendar-cart_paramValue">
-                                    Республика Молдова
-                                  </div>
-                                </div>
-                                <div class="rt-calendar-cart_param">
-                                  <div class="rt-calendar-cart_paramName">
-                                    Адрес:
-                                  </div>
-                                  <div class="rt-calendar-cart_paramValue">
-                                    Республика Молдова, мун. Кишинэу, Площадь
-                                    Дмитрие Кантемир, 1.
-                                  </div>
-                                </div>
-                                <!---->
-                                <!---->
-                                <div class="rt-calendar-cart_param">
-                                  <div class="rt-calendar-cart_paramName">
-                                    Собственник:
-                                  </div>
-                                  <div class="rt-calendar-cart_paramValue">
-                                    АО «ОДК»
-                                  </div>
-                                </div>
-                                <!---->
-                                <!---->
-                                <!---->
-                                <div class="rt-calendar-cart_param">
-                                  <div class="rt-calendar-cart_paramName">
-                                    Площадка торгов:
-                                  </div>
-                                  <div class="rt-calendar-cart_paramValue">
-                                    <a
-                                      href="https://sale.etprf.ru/Notification/id/15535"
-                                      target="_blank"
-                                    >
-                                      ЭТПРФ
-                                    </a>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="rt-deals-cart_paramsRight">
-                                <div class="rt-deals-cart_param">
-                                  <div class="rt-deals-cart_paramName">
-                                    Начало приема заявок:
-                                  </div>
-                                  <div class="rt-deals-cart_paramValue">
-                                    18.10.2024
-                                  </div>
-                                </div>
-                                <div class="rt-deals-cart_param">
-                                  <div class="rt-deals-cart_paramName">
-                                    Окончание приема заявок:
-                                  </div>
-                                  <div class="rt-deals-cart_paramValue">
-                                    19.11.2024
-                                  </div>
-                                </div>
-                                <div class="rt-deals-cart_param">
-                                  <div class="rt-deals-cart_paramName">
-                                    Дата торгов:
-                                  </div>
-                                  <div class="rt-deals-cart_paramValue">
-                                    21.11.2024
-                                  </div>
-                                </div>
-                                <div class="rt-deals-cart_docs">
-                                  <div class="rt-deals-cart_docName">
-                                    Документация по торгам
-                                  </div>
-                                  <a href="./deals-inner.html"></a>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="rt-calendar-cart_status">
-                            Прием заявок
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        data-bid="1995"
-                        itemscope="itemscope"
-                        itemtype="https://schema.org/Product"
-                        class="rt-calendar-cart"
-                      >
-                        <div class="rt-calendar-cart_inner">
-                          <div class="rt-calendar-cart_image">
-                            <img
-                              src="./images/deals-2.jpg"
-                              alt="deals"
-                              loading="lazy"
-                              itemprop="image"
-                            />
-                          </div>
-                          <div class="rt-calendar-cart_content">
-                            <div
-                              itemprop="offers"
-                              itemscope="itemscope"
-                              itemtype="https://schema.org/Offer"
-                              class="rt-calendar-cart_price"
-                            >
-                              <span itemprop="price" content="357 738 520"
-                                >357 738 520</span
-                              >
-                              <span itemprop="priceCurrency" content="RUB"
-                                >руб.</span
-                              >
-                            </div>
-                            <div class="rt-calendar-cart_title">
-                              <a href="./deals-inner.html"
-                                ><span itemprop="name"
-                                  >Земельно-имущественный комплекс на Беговой
-                                </span></a
-                              >
-                            </div>
-                            <div class="rt-calendar-cart_params">
-                              <div class="rt-calendar-cart_paramsLeft">
-                                <div class="rt-calendar-cart_param">
-                                  <div class="rt-calendar-cart_paramName">
-                                    Тип актива:
-                                  </div>
-                                  <div class="rt-calendar-cart_paramValue">
-                                    Земельно-имущественный комплекс
-                                  </div>
-                                </div>
-                                <div class="rt-calendar-cart_param">
-                                  <div class="rt-calendar-cart_paramName">
-                                    Регион:
-                                  </div>
-                                  <div class="rt-calendar-cart_paramValue">
-                                    Москва
-                                  </div>
-                                </div>
-                                <div class="rt-calendar-cart_param">
-                                  <div class="rt-calendar-cart_paramName">
-                                    Адрес:
-                                  </div>
-                                  <div class="rt-calendar-cart_paramValue">
-                                    г.Москва, ул. Беговая, дом 17, к.2
-                                  </div>
-                                </div>
-                                <div class="rt-calendar-cart_param">
-                                  <div class="rt-calendar-cart_paramName">
-                                    Площадь помещения, м<sup>2</sup>:
-                                  </div>
-                                  <div class="rt-calendar-cart_paramValue">
-                                    1546.3
-                                  </div>
-                                </div>
-                                <div class="rt-calendar-cart_param">
-                                  <div class="rt-calendar-cart_paramName">
-                                    Площадь земельного участка, га:
-                                  </div>
-                                  <div class="rt-calendar-cart_paramValue">
-                                    0.23
-                                  </div>
-                                </div>
-                                <div class="rt-calendar-cart_param">
-                                  <div class="rt-calendar-cart_paramName">
-                                    Собственник:
-                                  </div>
-                                  <div class="rt-calendar-cart_paramValue">
-                                    ПАО «ОАК»
-                                  </div>
-                                </div>
-                                <!---->
-                                <!---->
-                                <!---->
-                                <div class="rt-calendar-cart_param">
-                                  <div class="rt-calendar-cart_paramName">
-                                    Площадка торгов:
-                                  </div>
-                                  <div class="rt-calendar-cart_paramValue">
-                                    <a
-                                      href="https://sale.etprf.ru/Notification/Edit/id/15463"
-                                      target="_blank"
-                                    >
-                                      ЭТПРФ
-                                    </a>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="rt-deals-cart_paramsRight">
-                                <div class="rt-deals-cart_param">
-                                  <div class="rt-deals-cart_paramName">
-                                    Начало приема заявок:
-                                  </div>
-                                  <div class="rt-deals-cart_paramValue">
-                                    09.10.2024
-                                  </div>
-                                </div>
-                                <div class="rt-deals-cart_param">
-                                  <div class="rt-deals-cart_paramName">
-                                    Окончание приема заявок:
-                                  </div>
-                                  <div class="rt-deals-cart_paramValue">
-                                    11.11.2024
-                                  </div>
-                                </div>
-                                <div class="rt-deals-cart_param">
-                                  <div class="rt-deals-cart_paramName">
-                                    Дата торгов:
-                                  </div>
-                                  <div class="rt-deals-cart_paramValue">
-                                    13.11.2024
-                                  </div>
-                                </div>
-                                <div class="rt-deals-cart_docs">
-                                  <div class="rt-deals-cart_docName">
-                                    Документация по торгам
-                                  </div>
-                                  <a href="./deals-inner.html"></a>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="rt-calendar-cart_status">
-                            Прием заявок
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        data-bid="1686"
-                        itemscope="itemscope"
-                        itemtype="https://schema.org/Product"
-                        class="rt-calendar-cart"
-                      >
-                        <div class="rt-calendar-cart_inner">
-                          <div class="rt-calendar-cart_image">
-                            <img
-                              src="./images/deals-1.jpg"
-                              alt="deals"
-                              loading="lazy"
-                              itemprop="image"
-                            />
-                          </div>
-                          <div class="rt-calendar-cart_content">
-                            <div
-                              itemprop="offers"
-                              itemscope="itemscope"
-                              itemtype="https://schema.org/Offer"
-                              class="rt-calendar-cart_price"
-                            >
-                              <span itemprop="price" content="344 400 000"
-                                >344 400 000</span
-                              >
-                              <span itemprop="priceCurrency" content="RUB"
-                                >руб.</span
-                              >
-                            </div>
-                            <div class="rt-calendar-cart_title">
-                              <a href="./deals-inner.html"
-                                ><span itemprop="name"
-                                  >15,011 % уставного капитала АО «АРТОС»</span
-                                ></a
-                              >
-                            </div>
-                            <div class="rt-calendar-cart_params">
-                              <div class="rt-calendar-cart_paramsLeft">
-                                <div class="rt-calendar-cart_param">
-                                  <div class="rt-calendar-cart_paramName">
-                                    Тип актива:
-                                  </div>
-                                  <div class="rt-calendar-cart_paramValue">
-                                    Пакет акций
-                                  </div>
-                                </div>
-                                <div class="rt-calendar-cart_param">
-                                  <div class="rt-calendar-cart_paramName">
-                                    Регион:
-                                  </div>
-                                  <div class="rt-calendar-cart_paramValue">
-                                    Москва
-                                  </div>
-                                </div>
-                                <div class="rt-calendar-cart_param">
-                                  <div class="rt-calendar-cart_paramName">
-                                    Адрес:
-                                  </div>
-                                  <div class="rt-calendar-cart_paramValue">
-                                    г. Москва, ул. Россолимо, д. 17, стр. 1.
-                                  </div>
-                                </div>
-                                <!---->
-                                <!---->
-                                <div class="rt-calendar-cart_param">
-                                  <div class="rt-calendar-cart_paramName">
-                                    Собственник:
-                                  </div>
-                                  <div class="rt-calendar-cart_paramValue">
-                                    ООО "РТ-Капитал"
-                                  </div>
-                                </div>
-                                <!---->
-                                <!---->
-                                <!---->
-                                <div class="rt-calendar-cart_param">
-                                  <div class="rt-calendar-cart_paramName">
-                                    Площадка торгов:
-                                  </div>
-                                  <div class="rt-calendar-cart_paramValue">
-                                    <a
-                                      href=" https://sale.etprf.ru/Notification/id/15478 "
-                                      target="_blank"
-                                    >
-                                      ЭТПРФ
-                                    </a>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="rt-deals-cart_paramsRight">
-                                <div class="rt-deals-cart_param">
-                                  <div class="rt-deals-cart_paramName">
-                                    Начало приема заявок:
-                                  </div>
-                                  <div class="rt-deals-cart_paramValue">
-                                    03.04.2024
-                                  </div>
-                                </div>
-                                <div class="rt-deals-cart_param">
-                                  <div class="rt-deals-cart_paramName">
-                                    Окончание приема заявок:
-                                  </div>
-                                  <div class="rt-deals-cart_paramValue">
-                                    14.11.2024
-                                  </div>
-                                </div>
-                                <div class="rt-deals-cart_param">
-                                  <div class="rt-deals-cart_paramName">
-                                    Дата торгов:
-                                  </div>
-                                  <div class="rt-deals-cart_paramValue">
-                                    18.11.2024
-                                  </div>
-                                </div>
-                                <div class="rt-deals-cart_docs">
-                                  <div class="rt-deals-cart_docName">
-                                    Документация по торгам
-                                  </div>
-                                  <a href="./deals-inner.html"></a>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="rt-calendar-cart_status">
-                            Прием заявок
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        data-bid="1729"
-                        itemscope="itemscope"
-                        itemtype="https://schema.org/Product"
-                        class="rt-calendar-cart"
-                      >
-                        <div class="rt-calendar-cart_inner">
-                          <div class="rt-calendar-cart_image">
-                            <img
-                              src="./images/deals-2.jpg"
-                              alt="deals"
-                              loading="lazy"
-                              itemprop="image"
-                            />
-                          </div>
-                          <div class="rt-calendar-cart_content">
-                            <div
-                              itemprop="offers"
-                              itemscope="itemscope"
-                              itemtype="https://schema.org/Offer"
-                              class="rt-calendar-cart_price"
-                            >
-                              <span itemprop="price" content="275 887 500"
-                                >275 887 500</span
-                              >
-                              <span itemprop="priceCurrency" content="RUB"
-                                >руб.</span
-                              >
-                            </div>
-                            <div class="rt-calendar-cart_title">
-                              <a href="./deals-inner.html"
-                                ><span itemprop="name"
-                                  >100% уставного капитала АО «ИМЦ Концерна
-                                  «Вега»</span
-                                ></a
-                              >
-                            </div>
-                            <div class="rt-calendar-cart_params">
-                              <div class="rt-calendar-cart_paramsLeft">
-                                <div class="rt-calendar-cart_param">
-                                  <div class="rt-calendar-cart_paramName">
-                                    Тип актива:
-                                  </div>
-                                  <div class="rt-calendar-cart_paramValue">
-                                    Пакет акций
-                                  </div>
-                                </div>
-                                <div class="rt-calendar-cart_param">
-                                  <div class="rt-calendar-cart_paramName">
-                                    Регион:
-                                  </div>
-                                  <div class="rt-calendar-cart_paramValue">
-                                    Москва
-                                  </div>
-                                </div>
-                                <div class="rt-calendar-cart_param">
-                                  <div class="rt-calendar-cart_paramName">
-                                    Адрес:
-                                  </div>
-                                  <div class="rt-calendar-cart_paramValue">
-                                    , г. Москва, ул. Балтийская, д. 14.
-                                  </div>
-                                </div>
-                                <!---->
-                                <!---->
-                                <div class="rt-calendar-cart_param">
-                                  <div class="rt-calendar-cart_paramName">
-                                    Собственник:
-                                  </div>
-                                  <div class="rt-calendar-cart_paramValue">
-                                    АО «Концерн «Вега»
-                                  </div>
-                                </div>
-                                <!---->
-                                <!---->
-                                <!---->
-                                <div class="rt-calendar-cart_param">
-                                  <div class="rt-calendar-cart_paramName">
-                                    Площадка торгов:
-                                  </div>
-                                  <div class="rt-calendar-cart_paramValue">
-                                    <a
-                                      href=" https://sale.etprf.ru/Notification/Edit/id/15649"
-                                      target="_blank"
-                                    >
-                                      ЭТПРФ
-                                    </a>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="rt-deals-cart_paramsRight">
-                                <div class="rt-deals-cart_param">
-                                  <div class="rt-deals-cart_paramName">
-                                    Начало приема заявок:
-                                  </div>
-                                  <div class="rt-deals-cart_paramValue">
-                                    22.05.2024
-                                  </div>
-                                </div>
-                                <div class="rt-deals-cart_param">
-                                  <div class="rt-deals-cart_paramName">
-                                    Окончание приема заявок:
-                                  </div>
-                                  <div class="rt-deals-cart_paramValue">
-                                    12.11.2024
-                                  </div>
-                                </div>
-                                <div class="rt-deals-cart_param">
-                                  <div class="rt-deals-cart_paramName">
-                                    Дата торгов:
-                                  </div>
-                                  <div class="rt-deals-cart_paramValue">
-                                    14.11.2024
-                                  </div>
-                                </div>
-                                <div class="rt-deals-cart_docs">
-                                  <div class="rt-deals-cart_docName">
-                                    Документация по торгам
-                                  </div>
-                                  <a href="./deals-inner.html"></a>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="rt-calendar-cart_status">
-                            Прием заявок
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        data-bid="1920"
-                        itemscope="itemscope"
-                        itemtype="https://schema.org/Product"
-                        class="rt-calendar-cart"
-                      >
-                        <div class="rt-calendar-cart_inner">
-                          <div class="rt-calendar-cart_image">
-                            <img
-                              src="./images/deals-1.jpg"
-                              alt="deals"
-                              loading="lazy"
-                              itemprop="image"
-                            />
-                          </div>
-                          <div class="rt-calendar-cart_content">
-                            <div
-                              itemprop="offers"
-                              itemscope="itemscope"
-                              itemtype="https://schema.org/Offer"
-                              class="rt-calendar-cart_price"
-                            >
-                              <span itemprop="price" content="161 000 000"
-                                >161 000 000</span
-                              >
-                              <span itemprop="priceCurrency" content="RUB"
-                                >руб.</span
-                              >
-                            </div>
-                            <div class="rt-calendar-cart_title">
-                              <a href="./deals-inner.html"
-                                ><span itemprop="name"
-                                  >11,9984% уставного капитала АО «Промтехнопарк
-                                  «Очаково»</span
-                                ></a
-                              >
-                            </div>
-                            <div class="rt-calendar-cart_params">
-                              <div class="rt-calendar-cart_paramsLeft">
-                                <div class="rt-calendar-cart_param">
-                                  <div class="rt-calendar-cart_paramName">
-                                    Тип актива:
-                                  </div>
-                                  <div
-                                    class="rt-calendar-cart_paramValue"
-                                  ></div>
-                                </div>
-                                <div class="rt-calendar-cart_param">
-                                  <div class="rt-calendar-cart_paramName">
-                                    Регион:
-                                  </div>
-                                  <div class="rt-calendar-cart_paramValue">
-                                    Москва
-                                  </div>
-                                </div>
-                                <div class="rt-calendar-cart_param">
-                                  <div class="rt-calendar-cart_paramName">
-                                    Адрес:
-                                  </div>
-                                  <div class="rt-calendar-cart_paramValue">
-                                    ш. Очаковское, д. 16, стр. 2.
-                                  </div>
-                                </div>
-                                <!---->
-                                <!---->
-                                <div class="rt-calendar-cart_param">
-                                  <div class="rt-calendar-cart_paramName">
-                                    Собственник:
-                                  </div>
-                                  <div class="rt-calendar-cart_paramValue">
-                                    ООО "РТ-Капитал"
-                                  </div>
-                                </div>
-                                <!---->
-                                <!---->
-                                <!---->
-                                <div class="rt-calendar-cart_param">
-                                  <div class="rt-calendar-cart_paramName">
-                                    Площадка торгов:
-                                  </div>
-                                  <div class="rt-calendar-cart_paramValue">
-                                    <a
-                                      href=" https://sale.etprf.ru/Notification/id/15476"
-                                      target="_blank"
-                                    >
-                                      ЭТП РФ
-                                    </a>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="rt-deals-cart_paramsRight">
-                                <div class="rt-deals-cart_param">
-                                  <div class="rt-deals-cart_paramName">
-                                    Начало приема заявок:
-                                  </div>
-                                  <div class="rt-deals-cart_paramValue">
-                                    09.08.2024
-                                  </div>
-                                </div>
-                                <div class="rt-deals-cart_param">
-                                  <div class="rt-deals-cart_paramName">
-                                    Окончание приема заявок:
-                                  </div>
-                                  <div class="rt-deals-cart_paramValue">
-                                    14.11.2024
-                                  </div>
-                                </div>
-                                <div class="rt-deals-cart_param">
-                                  <div class="rt-deals-cart_paramName">
-                                    Дата торгов:
-                                  </div>
-                                  <div class="rt-deals-cart_paramValue">
-                                    18.11.2024
-                                  </div>
-                                </div>
-                                <div class="rt-deals-cart_docs">
-                                  <div class="rt-deals-cart_docName">
-                                    Документация по торгам
-                                  </div>
-                                  <a href="./deals-inner.html"></a>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="rt-calendar-cart_status">
-                            Прием заявок
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        data-bid="1994"
-                        itemscope="itemscope"
-                        itemtype="https://schema.org/Product"
-                        class="rt-calendar-cart"
-                      >
-                        <div class="rt-calendar-cart_inner">
-                          <div class="rt-calendar-cart_image">
-                            <img
-                              src="./images/deals-2.jpg"
-                              alt="deals"
-                              loading="lazy"
-                              itemprop="image"
-                            />
-                          </div>
-                          <div class="rt-calendar-cart_content">
-                            <div
-                              itemprop="offers"
-                              itemscope="itemscope"
-                              itemtype="https://schema.org/Offer"
-                              class="rt-calendar-cart_price"
-                            >
-                              <span itemprop="price" content="113 389 177"
-                                >113 389 177</span
-                              >
-                              <span itemprop="priceCurrency" content="RUB"
-                                >руб.</span
-                              >
-                            </div>
-                            <div class="rt-calendar-cart_title">
-                              <a href="./deals-inner.html"
-                                ><span itemprop="name"
-                                  >База отдыха «Лукоморье»</span
-                                ></a
-                              >
-                            </div>
-                            <div class="rt-calendar-cart_params">
-                              <div class="rt-calendar-cart_paramsLeft">
-                                <div class="rt-calendar-cart_param">
-                                  <div class="rt-calendar-cart_paramName">
-                                    Тип актива:
-                                  </div>
-                                  <div class="rt-calendar-cart_paramValue">
-                                    Земельно-имущественный комплекс
-                                  </div>
-                                </div>
-                                <div class="rt-calendar-cart_param">
-                                  <div class="rt-calendar-cart_paramName">
-                                    Регион:
-                                  </div>
-                                  <div class="rt-calendar-cart_paramValue">
-                                    Московская область
-                                  </div>
-                                </div>
-                                <div class="rt-calendar-cart_param">
-                                  <div class="rt-calendar-cart_paramName">
-                                    Адрес:
-                                  </div>
-                                  <div class="rt-calendar-cart_paramValue">
-                                    г. Солнечногорск, д. Трусово, территория
-                                    База отдыха Лукоморье, з/у 1.
-                                  </div>
-                                </div>
-                                <div class="rt-calendar-cart_param">
-                                  <div class="rt-calendar-cart_paramName">
-                                    Площадь помещения, м<sup>2</sup>:
-                                  </div>
-                                  <div class="rt-calendar-cart_paramValue">
-                                    404.2
-                                  </div>
-                                </div>
-                                <div class="rt-calendar-cart_param">
-                                  <div class="rt-calendar-cart_paramName">
-                                    Площадь земельного участка, га:
-                                  </div>
-                                  <div class="rt-calendar-cart_paramValue">
-                                    3.28
-                                  </div>
-                                </div>
-                                <div class="rt-calendar-cart_param">
-                                  <div class="rt-calendar-cart_paramName">
-                                    Собственник:
-                                  </div>
-                                  <div class="rt-calendar-cart_paramValue">
-                                    ПАО «ОАК»
-                                  </div>
-                                </div>
-                                <!---->
-                                <!---->
-                                <!---->
-                                <div class="rt-calendar-cart_param">
-                                  <div class="rt-calendar-cart_paramName">
-                                    Площадка торгов:
-                                  </div>
-                                  <div class="rt-calendar-cart_paramValue">
-                                    <a
-                                      href="https://sale.etprf.ru/Notification/Edit/id/15451"
-                                      target="_blank"
-                                    >
-                                      ЭТПРФ
-                                    </a>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="rt-deals-cart_paramsRight">
-                                <div class="rt-deals-cart_param">
-                                  <div class="rt-deals-cart_paramName">
-                                    Начало приема заявок:
-                                  </div>
-                                  <div class="rt-deals-cart_paramValue">
-                                    04.10.2024
-                                  </div>
-                                </div>
-                                <div class="rt-deals-cart_param">
-                                  <div class="rt-deals-cart_paramName">
-                                    Окончание приема заявок:
-                                  </div>
-                                  <div class="rt-deals-cart_paramValue">
-                                    05.11.2024
-                                  </div>
-                                </div>
-                                <div class="rt-deals-cart_param">
-                                  <div class="rt-deals-cart_paramName">
-                                    Дата торгов:
-                                  </div>
-                                  <div class="rt-deals-cart_paramValue">
-                                    07.11.2024
-                                  </div>
-                                </div>
-                                <div class="rt-deals-cart_docs">
-                                  <div class="rt-deals-cart_docName">
-                                    Документация по торгам
-                                  </div>
-                                  <a href="./deals-inner.html"></a>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="rt-calendar-cart_status">
-                            Прием заявок
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        data-bid="1881"
-                        itemscope="itemscope"
-                        itemtype="https://schema.org/Product"
-                        class="rt-calendar-cart"
-                      >
-                        <div class="rt-calendar-cart_inner">
-                          <div class="rt-calendar-cart_image">
-                            <img
-                              src="./images/deals-1.jpg"
-                              alt="deals"
-                              loading="lazy"
-                              itemprop="image"
-                            />
-                          </div>
-                          <div class="rt-calendar-cart_content">
-                            <div
-                              itemprop="offers"
-                              itemscope="itemscope"
-                              itemtype="https://schema.org/Offer"
-                              class="rt-calendar-cart_price"
-                            >
-                              <span itemprop="price" content="94 303 209.60"
-                                >94 303 209.60</span
-                              >
-                              <span itemprop="priceCurrency" content="RUB"
-                                >руб.</span
-                              >
-                            </div>
-                            <div class="rt-calendar-cart_title">
-                              <a href="./deals-inner.html"
-                                ><span itemprop="name"
-                                  >Производственный комплекс
-                                </span></a
-                              >
-                            </div>
-                            <div class="rt-calendar-cart_params">
-                              <div class="rt-calendar-cart_paramsLeft">
-                                <div class="rt-calendar-cart_param">
-                                  <div class="rt-calendar-cart_paramName">
-                                    Тип актива:
-                                  </div>
-                                  <div class="rt-calendar-cart_paramValue">
-                                    Производственные
-                                  </div>
-                                </div>
-                                <div class="rt-calendar-cart_param">
-                                  <div class="rt-calendar-cart_paramName">
-                                    Регион:
-                                  </div>
-                                  <div class="rt-calendar-cart_paramValue">
-                                    Воронежская область
-                                  </div>
-                                </div>
-                                <div class="rt-calendar-cart_param">
-                                  <div class="rt-calendar-cart_paramName">
-                                    Адрес:
-                                  </div>
-                                  <div class="rt-calendar-cart_paramValue">
-                                    г. Борисоглебск, ул. 40 лет Октября, д. 309
-                                  </div>
-                                </div>
-                                <div class="rt-calendar-cart_param">
-                                  <div class="rt-calendar-cart_paramName">
-                                    Площадь помещения, м<sup>2</sup>:
-                                  </div>
-                                  <div class="rt-calendar-cart_paramValue">
-                                    36611.2
-                                  </div>
-                                </div>
-                                <div class="rt-calendar-cart_param">
-                                  <div class="rt-calendar-cart_paramName">
-                                    Площадь земельного участка, га:
-                                  </div>
-                                  <div class="rt-calendar-cart_paramValue">
-                                    3.67
-                                  </div>
-                                </div>
-                                <div class="rt-calendar-cart_param">
-                                  <div class="rt-calendar-cart_paramName">
-                                    Собственник:
-                                  </div>
-                                  <div class="rt-calendar-cart_paramValue">
-                                    ПАО "ИЛ"
-                                  </div>
-                                </div>
-                                <!---->
-                                <!---->
-                                <!---->
-                                <div class="rt-calendar-cart_param">
-                                  <div class="rt-calendar-cart_paramName">
-                                    Площадка торгов:
-                                  </div>
-                                  <div class="rt-calendar-cart_paramValue">
-                                    <a
-                                      href="https://sale.etprf.ru/Notification/Edit/id/15635"
-                                      target="_blank"
-                                    >
-                                      ЭТПРФ
-                                    </a>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="rt-deals-cart_paramsRight">
-                                <div class="rt-deals-cart_param">
-                                  <div class="rt-deals-cart_paramName">
-                                    Начало приема заявок:
-                                  </div>
-                                  <div class="rt-deals-cart_paramValue">
-                                    13.09.2024
-                                  </div>
-                                </div>
-                                <div class="rt-deals-cart_param">
-                                  <div class="rt-deals-cart_paramName">
-                                    Окончание приема заявок:
-                                  </div>
-                                  <div class="rt-deals-cart_paramValue">
-                                    25.11.2024
-                                  </div>
-                                </div>
-                                <div class="rt-deals-cart_param">
-                                  <div class="rt-deals-cart_paramName">
-                                    Дата торгов:
-                                  </div>
-                                  <div class="rt-deals-cart_paramValue">
-                                    27.11.2024
-                                  </div>
-                                </div>
-                                <div class="rt-deals-cart_docs">
-                                  <div class="rt-deals-cart_docName">
-                                    Документация по торгам
-                                  </div>
-                                  <a href="./deals-inner.html"></a>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="rt-calendar-cart_status">
-                            Прием заявок
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        data-bid="1706"
-                        itemscope="itemscope"
-                        itemtype="https://schema.org/Product"
-                        class="rt-calendar-cart"
-                      >
-                        <div class="rt-calendar-cart_inner">
-                          <div class="rt-calendar-cart_image">
-                            <img
-                              src="./images/deals-2.jpg"
-                              alt="deals"
-                              loading="lazy"
-                              itemprop="image"
-                            />
-                          </div>
-                          <div class="rt-calendar-cart_content">
-                            <div
-                              itemprop="offers"
-                              itemscope="itemscope"
-                              itemtype="https://schema.org/Offer"
-                              class="rt-calendar-cart_price"
-                            >
-                              <span itemprop="price" content="79 736 856.50"
-                                >79 736 856.50</span
-                              >
-                              <span itemprop="priceCurrency" content="RUB"
-                                >руб.</span
-                              >
-                            </div>
-                            <div class="rt-calendar-cart_title">
-                              <a href="./deals-inner.html"
-                                ><span itemprop="name"
-                                  >Земельно-имущественный комплекс (БО
-                                  "Дружба")</span
-                                ></a
-                              >
-                            </div>
-                            <div class="rt-calendar-cart_params">
-                              <div class="rt-calendar-cart_paramsLeft">
-                                <div class="rt-calendar-cart_param">
-                                  <div class="rt-calendar-cart_paramName">
-                                    Тип актива:
-                                  </div>
-                                  <div class="rt-calendar-cart_paramValue">
-                                    Земельно-имущественный комплекс
-                                  </div>
-                                </div>
-                                <div class="rt-calendar-cart_param">
-                                  <div class="rt-calendar-cart_paramName">
-                                    Регион:
-                                  </div>
-                                  <div class="rt-calendar-cart_paramValue">
-                                    Московская область
-                                  </div>
-                                </div>
-                                <div class="rt-calendar-cart_param">
-                                  <div class="rt-calendar-cart_paramName">
-                                    Адрес:
-                                  </div>
-                                  <div class="rt-calendar-cart_paramValue">
-                                    р-н Наро-Фоминский, г.Верея, ул БСО Дружба,
-                                    д. б/н.
-                                  </div>
-                                </div>
-                                <div class="rt-calendar-cart_param">
-                                  <div class="rt-calendar-cart_paramName">
-                                    Площадь помещения, м<sup>2</sup>:
-                                  </div>
-                                  <div class="rt-calendar-cart_paramValue">
-                                    5842.6
-                                  </div>
-                                </div>
-                                <div class="rt-calendar-cart_param">
-                                  <div class="rt-calendar-cart_paramName">
-                                    Площадь земельного участка, га:
-                                  </div>
-                                  <div class="rt-calendar-cart_paramValue">
-                                    15.87
-                                  </div>
-                                </div>
-                                <div class="rt-calendar-cart_param">
-                                  <div class="rt-calendar-cart_paramName">
-                                    Собственник:
-                                  </div>
-                                  <div class="rt-calendar-cart_paramValue">
-                                    АО «Концерн «Вега»
-                                  </div>
-                                </div>
-                                <!---->
-                                <!---->
-                                <!---->
-                                <div class="rt-calendar-cart_param">
-                                  <div class="rt-calendar-cart_paramName">
-                                    Площадка торгов:
-                                  </div>
-                                  <div class="rt-calendar-cart_paramValue">
-                                    <a
-                                      href="https://sale.etprf.ru/Notification/id/15333"
-                                      target="_blank"
-                                    >
-                                      ЭТПРФ
-                                    </a>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="rt-deals-cart_paramsRight">
-                                <div class="rt-deals-cart_param">
-                                  <div class="rt-deals-cart_paramName">
-                                    Начало приема заявок:
-                                  </div>
-                                  <div class="rt-deals-cart_paramValue">
-                                    13.05.2024
-                                  </div>
-                                </div>
-                                <div class="rt-deals-cart_param">
-                                  <div class="rt-deals-cart_paramName">
-                                    Окончание приема заявок:
-                                  </div>
-                                  <div class="rt-deals-cart_paramValue">
-                                    26.11.2024
-                                  </div>
-                                </div>
-                                <div class="rt-deals-cart_param">
-                                  <div class="rt-deals-cart_paramName">
-                                    Дата торгов:
-                                  </div>
-                                  <div class="rt-deals-cart_paramValue">
-                                    28.11.2024
-                                  </div>
-                                </div>
-                                <div class="rt-deals-cart_docs">
-                                  <div class="rt-deals-cart_docName">
-                                    Документация по торгам
-                                  </div>
-                                  <a href="./deals-inner.html"></a>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="rt-calendar-cart_status">
-                            Прием заявок
-                          </div>
-                        </div>
-                      </div>
-                      <!---->
-                      <div class="rt-deals_loadMore">Загрузить еще</div>
+                      <div>По запросу ничего не найдено</div>
+                      <div class="rt-deals_loadMore hidden">Загрузить еще</div>
                     </div>
                   </div>
                 </div>
