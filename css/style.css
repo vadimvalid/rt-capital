@@ -83,6 +83,9 @@
 .rt-deals-navigation_item {
   color: #191919;
 }
+.rt-deals-navigation_item:link {
+  color: #191919;
+}
 .rt-deals-navigation_item:visited {
   color: #191919;
 }
@@ -92,4 +95,56 @@
 
 .multiselect.open .multiselect__select {
   transform: rotate(180deg);
+}
+
+.rt-manager-cb .rt-form_field input {
+  font-size: 13.5px;
+}
+
+.rt-manager-cb .rt-form_field input::placeholder {
+  font-size: 13.5px;
+}
+
+.nice-select {
+  float: none;
+  min-height: 56px;
+  padding: 10px 60px 10px 20px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  border: 1px solid #e8e8e8;
+  background: #fff;
+  font-size: 14px;
+}
+
+.nice-select::after {
+  top: 50%;
+  right: 0;
+  height: 100%;
+  width: 55px;
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='24' height='24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 9l6 6 6-6' stroke='%238F8F8C' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  padding: 0;
+  border: none;
+  margin: 0;
+  transform: translateY(-50%);
+  transform-origin: top;
+}
+
+.nice-select.open:after {
+  transform: rotate(180deg) translateY(-50%);
+}
+
+.rt-deals__map {
+  align-items: flex-start;
+}
+
+.rt-deals__map .rt-map-filter_toggler {
+  align-self: flex-end;
+}
+.rt-deals__map:has(.rt-form_field__region .multiselect--active)
+  .rt-map-filter_toggler {
+  align-self: center;
 }
